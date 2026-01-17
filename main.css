@@ -270,14 +270,7 @@ body{
 }
 
 
-.culture-section{
-  min-height:100vh;
-  padding:120px 8%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  background:url("images/bg-2.jpg") center/cover no-repeat;
-}
+
 
 .culture-gallery{
   width:240px;
@@ -1203,4 +1196,5 @@ body{
   .about-image img{
     height:300px;
   }
+
 }
