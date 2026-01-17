@@ -222,7 +222,7 @@ body{
   justify-content: space-between;
   gap: 120px;
 
-  background: url("images/bg-1.jpg") center/cover no-repeat;
+  background: url("images/bg-2.jpg") center/cover no-repeat;
   overflow: hidden;
 }
 
@@ -1198,3 +1198,4 @@ body{
   }
 
 }
+
