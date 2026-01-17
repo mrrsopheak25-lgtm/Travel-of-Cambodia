@@ -840,12 +840,10 @@ body{
 }
 
 
+
 .adventure-section{
-  padding:90px 6%;
-  position:relative;
-  background:
-    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-    url("images/bg-8.jpg") center/cover no-repeat;
+  padding:100px 8%;
+  background:#0b0b0b;
   color:#fff;
   overflow:hidden;
 }
@@ -854,19 +852,17 @@ body{
 .adventure-header{
   display:flex;
   justify-content:space-between;
-  align-items:flex-end;
-  margin-bottom:35px;
+  align-items:center;
+  margin-bottom:40px;
 }
 
 .adventure-header h2{
-  font-size:32px;
-  font-weight:700;
+  font-size:34px;
 }
 
-
 .adventure-hr{
-  width:70px;
-  height:4px;
+  width:90px;
+  height:3px;
   background:#2dd4bf;
   border:none;
   margin-top:10px;
@@ -874,20 +870,20 @@ body{
 
 
 .adventure-arrows button{
-  width:44px;
-  height:44px;
-  border-radius:50%;
+  background:#111;
   border:none;
-  background:#fff;
-  color:#000;
-  font-size:16px;
+  color:#fff;
+  font-size:20px;
+  padding:10px 14px;
+  border-radius:50%;
   cursor:pointer;
-  margin-left:12px;
+  margin-left:10px;
   transition:.3s;
 }
 
 .adventure-arrows button:hover{
   background:#2dd4bf;
+  color:#000;
 }
 
 
@@ -906,47 +902,66 @@ body{
 
 .adventure-card{
   min-width:320px;
-  height:210px;
+  height:220px;
   border-radius:18px;
   overflow:hidden;
   flex-shrink:0;
-  box-shadow:0 15px 35px rgba(0,0,0,.45);
-  transition:.4s;
+  box-shadow:0 20px 50px rgba(0,0,0,.6);
 }
 
 .adventure-card img{
   width:100%;
   height:100%;
   object-fit:cover;
-  transition:.5s;
-}
-
-.adventure-card:hover{
-  transform:translateY(-10px);
+  transition:.4s;
 }
 
 .adventure-card:hover img{
   transform:scale(1.08);
 }
 
-
 @media(max-width:768px){
+
+  .adventure-section{
+    padding:80px 6%;
+  }
+
   .adventure-header{
     flex-direction:column;
     align-items:flex-start;
-    gap:15px;
+    gap:18px;
   }
 
   .adventure-header h2{
     font-size:26px;
   }
 
+  .adventure-arrows{
+    align-self:flex-end;
+  }
+
+  .adventure-row{
+    gap:16px;
+  }
+
   .adventure-card{
-    min-width:250px;
-    height:170px;
+    min-width:260px;
+    height:180px;
   }
 }
 
+
+@media(max-width:480px){
+
+  .adventure-header h2{
+    font-size:22px;
+  }
+
+  .adventure-card{
+    min-width:220px;
+    height:150px;
+  }
+}
 
 .contact-hero {
   position: relative;
